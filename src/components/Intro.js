@@ -1,5 +1,5 @@
 import React from "react";
-import { MDBBox, MDBRow, MDBCol, MDBView } from "mdbreact";
+import { MDBBox, MDBRow, MDBCol } from "mdbreact";
 
 function Intro(props) {
   return (

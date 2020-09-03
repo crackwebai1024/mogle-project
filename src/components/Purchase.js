@@ -5,7 +5,7 @@ function Purchase(props) {
   return (
     <MDBRow className="purchase">
       <MDBCol md="6" className="purchase-pic">
-        <img src="images/purchase.png" alt="photo of home" className="purpic" />
+        <img src="images/purchase.png" alt="photohome" className="purpic" />
       </MDBCol>
       <MDBCol md="6" className="purchase-content">
         <div>

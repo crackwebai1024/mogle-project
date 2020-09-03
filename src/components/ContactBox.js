@@ -1,5 +1,5 @@
 import React from "react";
-import { MDBBox, MDBRow, MDBInput, MDBCol } from "mdbreact";
+import { MDBBox, MDBRow, MDBCol } from "mdbreact";
 import ContactForm from "./ContactForm";
 
 function ContactBox(props) {

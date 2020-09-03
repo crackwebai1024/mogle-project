@@ -1,6 +1,5 @@
 import React from "react";
 import { MDBBox } from "mdbreact";
-import ContactBox from "./ContactBox";
 
 function Contact(props) {
   return (

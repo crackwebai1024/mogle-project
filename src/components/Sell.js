@@ -28,7 +28,7 @@ function Sell(props) {
         </div>
       </MDBCol>
       <MDBCol md="6" style={{ padding: "0px" }}>
-        <img src="images/sell.png" alt="photo of home" className="purpic" />
+        <img src="images/sell.png" alt="photohome" className="purpic" />
       </MDBCol>
     </MDBRow>
   );
