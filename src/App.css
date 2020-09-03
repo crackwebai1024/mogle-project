@@ -33,6 +33,21 @@ div.row {
   src: url("./assets/Roboto/Roboto-Regular.ttf");
 }
 
+@font-face {
+  font-family: raleway;
+  src: url("./assets/Raleway/Raleway-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: ralewayitalic;
+  src: url("./assets/Raleway/Raleway-Italic-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: ralewayextrabold;
+  src: url("./assets/Raleway/static/Raleway-ExtraBold.ttf");
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -92,7 +107,7 @@ div.row {
 .userh4 {
   font-size: 30px;
   font-weight: 400;
-  font-family: roboto, sans-serif;
+  font-family: "robotobold", sans-serif;
 }
 
 .userh5 {
@@ -114,9 +129,12 @@ div.row {
 }
 
 .bold {
-  font-family: robotobold, sans-serif;
+  font-family: ralewayextrabold, sans-serif;
 }
 
+.active {
+  border-bottom: solid 2px white;
+}
 .userp {
   font-size: 20px;
 }

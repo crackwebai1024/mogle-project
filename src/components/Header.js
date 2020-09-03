@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { MDBBox } from "mdbreact";
 
 function Header() {
+  const [active, setActive] = useState("sell");
   return (
     <MDBBox className="header" color="white">
       <MDBBox
@@ -13,7 +14,7 @@ function Header() {
       >
         <MDBBox display="flex" flex="row">
           <MDBBox tag="p" className="userh2 bold">
-            ALDEN
+            <strong>ALDEN</strong>
           </MDBBox>
           <MDBBox tag="p" className="userh2 between">
             CASAS
@@ -21,10 +22,20 @@ function Header() {
         </MDBBox>
         <MDBBox display="flex" flex="row" className="userp bold">
           <MDBBox tag="p">
-            <a>BUY OR SELL</a>
+            <a
+              className={active === "sell" ? "active" : ""}
+              onClick={() => setActive("sell")}
+            >
+              BUY OR SELL
+            </a>
           </MDBBox>
           <MDBBox tag="p" className="between">
-            <a>CONTACT ME</a>
+            <a
+              className={active === "contact" ? "active" : ""}
+              onClick={() => setActive("contact")}
+            >
+              CONTACT ME
+            </a>
           </MDBBox>
         </MDBBox>
       </MDBBox>
