@@ -1,5 +1,5 @@
 import React from "react";
-import { MDBBox, MDBRow, MDBCol } from "mdbreact";
+import { MDBBox, MDBRow, MDBCol, MDBView } from "mdbreact";
 
 function Carousel(props) {
   const getpicturelist = () => {
@@ -7,7 +7,9 @@ function Carousel(props) {
     for (let i = 1; i < 6; i++) {
       list.push(
         <MDBCol className={"fifth" + " dis" + i}>
-          <img src={"images/homes" + i + ".png"} alt="home" />
+          <MDBView hover zoom className="imgwrapper">
+            <img src={"images/homes" + i + ".png"} alt="home" />
+          </MDBView>
         </MDBCol>
       );
     }

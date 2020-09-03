@@ -1,5 +1,5 @@
 import React from "react";
-import { MDBRow, MDBCol, MDBBox } from "mdbreact";
+import { MDBRow, MDBCol, MDBBox, MDBBtn, MDBView } from "mdbreact";
 
 function Sell(props) {
   return (
@@ -22,13 +22,18 @@ function Sell(props) {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </MDBBox>
-          <button className="userbtn userh5 outlineblack">
+          <MDBBtn outline color="black" className="userbtn userh5 outlineblack">
             GET A FREE HOME ESTIMATE
-          </button>
+          </MDBBtn>
+          {/* <button className="userbtn userh5 outlineblack">
+            GET A FREE HOME ESTIMATE
+          </button> */}
         </div>
       </MDBCol>
       <MDBCol md="6" style={{ padding: "0px" }}>
-        <img src="images/sell.png" alt="photohome" className="purpic" />
+        <MDBView hover zoom>
+          <img src="images/sell.png" alt="photohome" className="purpic" />
+        </MDBView>
       </MDBCol>
     </MDBRow>
   );

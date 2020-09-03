@@ -1,11 +1,13 @@
 import React from "react";
-import { MDBRow, MDBCol, MDBBox } from "mdbreact";
+import { MDBRow, MDBCol, MDBBox, MDBBtn, MDBView } from "mdbreact";
 
 function Purchase(props) {
   return (
     <MDBRow className="purchase">
       <MDBCol md="6" className="purchase-pic">
-        <img src="images/purchase.png" alt="photohome" className="purpic" />
+        <MDBView hover zoom>
+          <img src="images/purchase.png" alt="photohome" className="purpic" />
+        </MDBView>
       </MDBCol>
       <MDBCol md="6" className="purchase-content">
         <div>
@@ -25,7 +27,10 @@ function Purchase(props) {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </MDBBox>
-          <button className="userbtn userh5 outlineblack">GET STARTED</button>
+          <MDBBtn outline color="black" className="userbtn userh5 outlineblack">
+            GET STARTED
+          </MDBBtn>
+          {/* <button className="userbtn userh5 outlineblack">GET STARTED</button> */}
         </div>
       </MDBCol>
     </MDBRow>

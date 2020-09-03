@@ -1,5 +1,5 @@
 import React from "react";
-import { MDBBox, MDBRow, MDBCol } from "mdbreact";
+import { MDBBox, MDBRow, MDBCol, MDBView } from "mdbreact";
 
 function Footer(props) {
   return (
@@ -48,7 +48,9 @@ function Footer(props) {
           </MDBBox>
         </MDBCol>
         <MDBCol xl="2" className="address footerdiv" md="6">
-          <img src="images/googlemap.png" alt="googlemap" />
+          <MDBView hover zoom>
+            <img src="images/googlemap.png" alt="googlemap" />
+          </MDBView>
         </MDBCol>
         <MDBCol xl="1"></MDBCol>
       </MDBRow>

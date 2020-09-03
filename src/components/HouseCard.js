@@ -8,6 +8,7 @@ import {
   MDBCardTitle,
   MDBCardText,
   MDBIcon,
+  MDBCardImage,
 } from "mdbreact";
 
 function HouseCard(props) {
@@ -23,7 +24,7 @@ function HouseCard(props) {
       return (
         <MDBCol xl="4" sm="12">
           <MDBCard className="mb-4">
-            <img className="img-fluid" src={item} />
+            <MDBCardImage className="img-fluid" src={item} waves />
             <MDBCardBody>
               <MDBCardTitle className="userh6">
                 123 MAIN ST. LAS VEGAS, NV 89147

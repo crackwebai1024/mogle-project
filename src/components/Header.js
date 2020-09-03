@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { MDBBox } from "mdbreact";
+import { MDBBox, MDBBtn } from "mdbreact";
 
 function Header() {
   const [active, setActive] = useState("sell");
@@ -50,7 +50,10 @@ function Header() {
           DREAM HOME
         </MDBBox>
       </MDBBox>
-      <button className="userbtn userh5 outline">CONTACT ME</button>
+      <MDBBtn outline color="white" className="userbtn userh5 outline">
+        CONTACT ME
+      </MDBBtn>
+      {/* <button className="userbtn userh5 outline">CONTACT ME</button> */}
     </MDBBox>
   );
 }

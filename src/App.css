@@ -312,7 +312,7 @@ div.row {
 
 .submit-btn {
   margin: auto;
-  background-color: rgb(2, 48, 97);
+  background-color: rgb(2, 48, 97) !important;
   color: white;
   border: none;
   height: 60px;
@@ -336,9 +336,14 @@ div.row {
   padding: 8px;
 }
 
-.fifth > img {
+.fifth > .imgwrapper {
   width: 100%;
 }
+
+.fifth > .imgwrapper > img {
+  width: 100%;
+}
+
 .footer {
   min-height: 311px;
   background-color: rgb(2, 48, 97);
@@ -421,6 +426,10 @@ ul.footerlist {
 
 .address > .footerlist > li {
   float: right;
+}
+
+.footerdiv > div > img {
+  width: 100%;
 }
 
 @media only screen and (max-width: 1440px) {

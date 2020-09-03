@@ -1,5 +1,5 @@
 import React from "react";
-import { MDBBox, MDBRow, MDBCol } from "mdbreact";
+import { MDBBox, MDBRow, MDBCol, MDBBtn } from "mdbreact";
 
 function Intro(props) {
   return (
@@ -30,7 +30,10 @@ function Intro(props) {
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </MDBBox>
-            <button className="userbtn userh5 outline">CONTACT ME</button>
+            <MDBBtn outline color="white" className="userbtn userh5 outline">
+              CONTACT ME
+            </MDBBtn>
+            {/* <button className="userbtn userh5 outline">CONTACT ME</button> */}
           </div>
         </MDBCol>
       </MDBRow>

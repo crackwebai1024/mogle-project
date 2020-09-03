@@ -1,5 +1,5 @@
 import React from "react";
-import { MDBBox, MDBInput, MDBRow, MDBCol } from "mdbreact";
+import { MDBBox, MDBInput, MDBRow, MDBCol, MDBBtn } from "mdbreact";
 
 function ContactForm(props) {
   return (
@@ -31,7 +31,10 @@ function ContactForm(props) {
           />
         </MDBCol>
       </MDBRow>
-      <button className="submit-btn userh5">SUBMIT</button>
+      <MDBBtn color="blue-grey" className="submit-btn userh5">
+        SUBMIT
+      </MDBBtn>
+      {/* <button className="submit-btn userh5">SUBMIT</button> */}
     </MDBBox>
   );
 }
