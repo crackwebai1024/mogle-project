@@ -16,18 +16,20 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <div className="App">
+    <>
       <Header />
-      <Homes />
-      <Intro />
-      <Testimonial />
-      <Purchase />
-      <Sell />
-      <Contact />
-      <ContactBox />
-      <Carousel />
+      <div className="App">
+        <Homes />
+        <Intro />
+        <Testimonial />
+        <Purchase />
+        <Sell />
+        <Contact />
+        <ContactBox />
+        <Carousel />
+      </div>
       <Footer />
-    </div>
+    </>
   );
 };
 
