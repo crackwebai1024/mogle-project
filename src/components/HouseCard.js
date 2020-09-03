@@ -22,9 +22,9 @@ function HouseCard(props) {
   const getimage = () => {
     return picurls.map((item, key) => {
       return (
-        <MDBCol xl="4" sm="12">
+        <MDBCol lg="4" sm="12">
           <MDBCard className="mb-4">
-            <MDBCardImage className="img-fluid" src={item} waves />
+            <MDBCardImage className="img-fluid cardimg" src={item} waves />
             <MDBCardBody>
               <MDBCardTitle className="userh6">
                 123 MAIN ST. LAS VEGAS, NV 89147

@@ -437,6 +437,11 @@ ul.footerlist {
   max-width: 1440px;
   margin: auto;
 }
+
+.cardimg {
+  width: 100%;
+}
+
 @media only screen and (max-width: 1440px) {
 }
 
@@ -476,6 +481,9 @@ ul.footerlist {
 }
 
 @media only screen and (max-width: 1080px) {
+  .housecards {
+    padding: 10px 30px;
+  }
   .address {
     margin-top: 30px;
   }
